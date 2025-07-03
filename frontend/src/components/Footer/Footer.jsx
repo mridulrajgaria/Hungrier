@@ -9,33 +9,44 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img src={assets.logo_bottom} alt="" />
-                <p> Food Prep is a full-stack project designed for hands-on teaching, helping students learn full-stack development. It's used by FACEPrep, an ed-tech company focused on equipping students with the skills to achieve their career aspirations.</p>
+                <p> Hungrier is your go-to food delivery app, bringing delicious meals from your favorite restaurants straight to your door. Fast, fresh, and reliable—satisfy your hunger with Hungrier!</p>
                 <div className="footer-social-icons">
-                    <img src={assets.facebook_icon} alt="" />
-                    <img src={assets.twitter_icon} alt="" />
-                    <img src={assets.linkedin_icon} alt="" />
+                    <a href="https://www.instagram.com/themridulrajgaria/" target="_blank" rel="noopener noreferrer">
+                      <img src={assets.facebook_icon} alt="Instagram" />
+                    </a>
+                    <a href="https://x.com/MridulRajgaria" target="_blank" rel="noopener noreferrer">
+                      <img src={assets.twitter_icon} alt="Twitter" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/mridul-rajgaria-112257288/" target="_blank" rel="noopener noreferrer">
+                      <img src={assets.linkedin_icon} alt="LinkedIn" />
+                    </a>
                 </div>
             </div>
             <div className="footer-content-center">
-                <h2>Company</h2>
+                <h2>Quick Links</h2>
                 <ul>
-                    <a href="https://faceprep.edmingle.com/"><li>Home</li></a>
-                    <a href="https://faceprep.edmingle.com/contact-us"><li>About us</li></a>
-                    <a href="https://faceprep.edmingle.com/courses"><li>Courses</li></a>
-                    <a href="https://faceprep.edmingle.com/reviews"><li>Reviews</li></a>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/offers"><li>Offers</li></a>
                 </ul>
+                <div className="footer-download-app" style={{marginTop: '20px'}}>
+                  <h2>Download App</h2>
+                  <div style={{display: 'flex', gap: '10px'}}>
+                    <a href="#"><img src={assets.app_store} alt="App Store" style={{width: '120px'}} /></a>
+                    <a href="#"><img src={assets.play_store} alt="Google Play" style={{width: '120px'}} /></a>
+                  </div>
+                </div>
             </div>
             <div className="footer-content-right">
                 <h2>Get in touch</h2>
                 <ul>
-                    <li>+91 96297 45022</li>
-                    <li>enquiry@faceprep.in</li>
+                    <li>+91 91530 90104</li>
+                    <li>mridulrajgaria@gmail.com</li>
                 </ul>
             </div>
             
         </div>
         <hr />
-        <p className="footer-copyright">Copyright 2024 © 2021 FoodPrep. All rights reserved.</p>
+        <p className="footer-copyright">Copyright 2025 © Hungrier. All rights reserved.</p>
     </div>
   )
 }
